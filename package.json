@@ -1,9 +1,15 @@
 {
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "start": "dumi dev",
-    "build": "dumi build",
+    "docs:build": "dumi build",
+    "docs:deploy": "dumi build && gh-pages -d docs-dist",
     "compile": "father-build",
     "changelog": "lerna-changelog",
     "clean": "lerna clean -y",
@@ -18,6 +24,7 @@
     "dumi": "^1.1.7",
     "dumi-theme-mobile": "^1.0.7",
     "father-build": "^1.19.2",
+    "gh-pages": "^3.2.3",
     "lerna": "^3.6.0",
     "lerna-changelog": "^0.8.2",
     "umi-test": "^1.5.12",
