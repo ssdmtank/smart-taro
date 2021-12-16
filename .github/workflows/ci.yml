@@ -1,28 +1,21 @@
 name: Node CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - master # default branch
 
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        node_version: [8.x, 10.x, 12.x]
-        os: [ubuntu-latest]
+    runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node_version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node_version }}
+      - uses: actions/checkout@v2
       - run: yarn
       - run: yarn bootstrap --npm-client yarn
       - run: yarn build
-      - run: yarn test --forceExit
-        env:
-          CI: true
-          HEADLESS: false
-          PROGRESS: none
-          NODE_ENV: test
-          NODE_OPTIONS: --max_old_space_size=4096
+      - name: Deploy
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                # github_token: ${{ secrets.GITHUB_TOKEN }}
+                publish_dir: ./docs-dist
 
