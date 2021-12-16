@@ -13,3 +13,4 @@
 yarn.lock
 .umi
 dist
+docs-dist
