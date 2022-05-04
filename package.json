@@ -15,9 +15,9 @@
     "app:build:h5": "cd ./packages/app && npm run build:h5",
     "app:build": "lerna run build:weapp --scope=app --stream",
     "app:build:examine": "lerna run build:weapp:examine --scope=app --stream",
-    "build": "lerna run build --scope=taro-hooks --stream",
+    "build": "lerna run build --scope=smart-taro-hooks --stream",
     "deploy": "npm run docs:build && npm run docs:deploy",
-    "release": "npm run build && npm run lerna:publish:major",
+    "release": "npm run build && npm run lerna:publish:patch",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
@@ -28,7 +28,8 @@
     "lerna:publish:minor": "lerna publish minor --no-private",
     "lerna:publish:patch": "lerna publish patch --no-private",
     "log": "./node_modules/.bin/conventional-changelog -i CHANGELOG.md -s -r 0",
-    "postversion": "npm run log"
+    "postversion": "npm run log",
+    "commit": "git add . && cz"
   },
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -90,9 +91,14 @@
     "node": ">=12.0.0"
   },
   "repository": {
-    "branch": "main",
+    "branch": "master",
     "platform": "github",
     "url": "git@github.com/ssdmtank/smart-taro",
     "type": "git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }

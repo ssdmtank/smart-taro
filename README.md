@@ -24,8 +24,8 @@ lerna init
 rm -rf src
 
 // 创建包
-lerna create @smart-taro/hooks
-lerna create @smart-taro/app
+lerna create smart-taro-hooks
+lerna create smart-taro-app
 
 yarn
 

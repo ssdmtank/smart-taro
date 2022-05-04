@@ -1,6 +1,6 @@
 {
-  "name": "@smart-taro/hooks",
-  "version": "0.0.1",
+  "name": "smart-taro-hooks",
+  "version": "0.0.2",
   "description": "Taro hooks liberary",
   "keywords": [
     "taro hooks",
@@ -16,6 +16,7 @@
     "name": "ssdmtank"
   },
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org"
   },
   "repository": "https://github.com/ssdmtank/smart-taro.git",
@@ -47,5 +48,6 @@
   "engines": {
     "node": ">=12.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "129199c70ecab1d06763475a0e17d385441f601c"
 }

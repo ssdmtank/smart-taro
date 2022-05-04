@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react';
 
 /**
  * 强制刷新函数
- * @returns Function
+ * @returns Fn
  */
 const useUpdate = () => {
   const [, setState] = useState({});
