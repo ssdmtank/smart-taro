@@ -25,7 +25,7 @@ $ yarn add smart-taro-hooks
 ## 使用
 
 ```jsx
-import { useUpdate } from 'taro-hooks';
+import { useUpdate } from 'smart-taro-hooks';
 ```
 
 注: `smart-taro-hooks`的`js`代码默认支持基于`ES modules`的`tree shaking`. 但你依然可以显式的使用[`babel-plugin-import`](https://github.com/ant-design/babel-plugin-import)去设置按需加载, 设置方式如下:

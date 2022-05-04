@@ -1,5 +1,6 @@
 ---
 hero:
+  title: Smart-Taro-hooks
   desc: 为 Taro 而设计的 Hooks Library
   actions:
     - text: 快速上手

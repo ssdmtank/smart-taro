@@ -1,11 +1,20 @@
 import { defineConfig } from 'dumi';
 
+const repo = 'smart-taro';
+
 export default defineConfig({
-  title: 'smart-taro',
-  favicon: 'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
-  logo: 'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
+  title: repo,
+  favicon: 'https://img.icons8.com/ultraviolet/2x/year-of-monkey.png',
+  logo: 'https://img.icons8.com/ultraviolet/2x/year-of-monkey.png',
+  base: `/${repo}`,
+  publicPath: `/${repo}/`,
   outputPath: 'docs-dist',
   mode: 'site',
+  hash: true,
+  exportStatic: {}, // 将所有路由输出为 HTML 目录结构，以免刷新页面时 404
+  resolve: {
+    includes: ['docs', 'packages'],
+  },
   devServer: {
     host: '0.0.0.0',
     port: 12345,
