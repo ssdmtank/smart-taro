@@ -28,8 +28,8 @@
     "lerna:publish:minor": "lerna publish minor --no-private",
     "lerna:publish:patch": "lerna publish patch --no-private",
     "log": "./node_modules/.bin/conventional-changelog -i CHANGELOG.md -s -r 0",
-    "commit": "git add . && cz",
-    "postversion": "npm run log"
+    "postversion": "npm run log",
+    "commit": "git add . && cz"
   },
   "main": "lib/index.js",
   "module": "es/index.js",
