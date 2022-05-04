@@ -1,6 +1,6 @@
 {
   "name": "@smart-taro/app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "> TODO: description",
   "author": "wang ying <598512076@qq.com>",
   "homepage": "https://github.com/ssdmtank/smart-taro#readme",
@@ -27,7 +27,7 @@
     "url": "https://github.com/ssdmtank/smart-taro/issues"
   },
   "dependencies": {
-    "@smart-taro/hooks": "^0.0.2"
+    "@smart-taro/hooks": "^0.0.3"
   },
   "gitHead": "8b6a13354bf61a627a313ece52ab83cd80f8f229"
 }
