@@ -1,5 +1,6 @@
 ## <small>0.0.1 (2022-05-04)</small>
 
+- chore(release): publish ([e9d6bb6](https://github.com/ssdmtank/smart-taro/commit/e9d6bb6))
 - chore(release): publish ([129199c](https://github.com/ssdmtank/smart-taro/commit/129199c))
 - chore(release): publish ([837dd3b](https://github.com/ssdmtank/smart-taro/commit/837dd3b))
 - chore(release): publish ([8b6a133](https://github.com/ssdmtank/smart-taro/commit/8b6a133))
@@ -7,6 +8,7 @@
 - fix: fix commit ([8ef33be](https://github.com/ssdmtank/smart-taro/commit/8ef33be))
 - fix: fix commit2 ([6a32e62](https://github.com/ssdmtank/smart-taro/commit/6a32e62))
 - fix: fix commit3 ([32dde93](https://github.com/ssdmtank/smart-taro/commit/32dde93))
+- fix: fix commit5 ([c12f008](https://github.com/ssdmtank/smart-taro/commit/c12f008))
 - Create LICENSE ([b105324](https://github.com/ssdmtank/smart-taro/commit/b105324))
 - first commit ([2535aa4](https://github.com/ssdmtank/smart-taro/commit/2535aa4))
 - fix ([83269f5](https://github.com/ssdmtank/smart-taro/commit/83269f5))
