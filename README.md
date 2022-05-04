@@ -1,13 +1,33 @@
-# 🌟 Smart Taro Seed
+# smart-taro
 
-Smart Taro seed, 是基于Dumi和Lerna， 由Taro + React hooks + Typescprit 开发的小程序组件工具库 🎉。
+参考 https://juejin.cn/post/7074111715507437598
 
+```
+yarn create @umijs/dumi-lib --site
+lerna init
 
-## 🚀 如何使用？
+// lerna.json
+{
+  ...
+  "npmClient": "yarn",
+  "useWorkspaces": true, // 使用yarn workspaces
+  "version": "independent" // 使用独立版本
+}
 
-![](https://gw.alipayobjects.com/zos/bmw-prod/91791904-cdde-4408-959d-72fd0c9049b1/kj80x6lv_w1918_h352.png)
+// package.json
+{
+  ...
+  "workspaces": ["packages/*"],
+}
 
+// 删除示例
+rm -rf src
 
-## 📒 目录介绍
+// 创建包
+lerna create @smart-taro/hooks
+lerna create @smart-taro/app
 
-## 🤖 命令介绍
+yarn
+
+yarn start
+```

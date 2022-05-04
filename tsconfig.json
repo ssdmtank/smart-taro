@@ -1,16 +1,13 @@
 {
   "compilerOptions": {
     "target": "esnext",
+    "module": "esnext",
     "moduleResolution": "node",
-    "jsx": "preserve",
-    "allowJs": true,
+    "jsx": "react",
     "esModuleInterop": true,
-    "experimentalDecorators": true,
+    "types": ["jest"],
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "declaration": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "declaration": true
   }
 }

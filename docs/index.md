@@ -1,25 +1,60 @@
 ---
-title: Smart Taro Seed - 基于 React 和 TypeScript 实现的 UI 组件库
 hero:
-  title: Smart Taro Seed
-  desc: 🏆 个人开源项目，使用 React + TypeScript 打造自己的 UI 组件库
+  desc: 为 Taro 而设计的 Hooks Library
   actions:
-    - text: 开始使用
-      link: /ui-demo/src/foo
+    - text: 快速上手
+      link: /quick
 features:
-  - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
-    title: 开箱即用
-    desc: 使用方式简单，项目长期维护，并在开发中不断探索最佳实践
-  - icon: https://gw.alipayobjects.com/zos/bmw-prod/d60657df-0822-4631-9d7c-e7a869c2f21c/k79dmz3q_w126_h126.png
-    title: React 进阶必备
-    desc: 使用 React Hook 打造自己的组件库，React 进阶学习的必经之路
-  - icon: https://gw.alipayobjects.com/os/q/cms/images/k9zij2bh/67f75d56-0d62-47d6-a8a5-dbd0cb79a401_w96_h96.png
-    title: TypeScript
-    desc: 代码全部使用 TypeScript 开发，提供完整的组件和 API 类型定义
-footer: smart taro seed MIT Licensed | Copyright © 2021<br />Powered by [dumi](https://d.umijs.org)
+  - icon: https://taro.zone/static/images/icon_community.svg
+    title: 全面匹配
+    desc: 对标Taro API开发
+  - icon: https://ahooks.js.org/logo.svg
+    title: 结合ahook
+    desc: 使用ahook拓展对应能力
+  - icon: https://taro.zone/static/images/icon_component.svg
+    title: 类型定义
+    desc: 使用typescript开发, 完整的类型定义方便开发
+footer: Open-source [MIT Licensed](https://github.com/ssdmtank/smart-taro/blob/main/LICENSE) | Copyright © 2022<br />Powered by [smart-taro](https://github.com/ssdmtank/smart-taro)
 ---
 
-## 我的技术社区
+## 轻松使用
 
-- [Github](https://github.com/ssdmtank)
-- [个人博客](https://ssdmtank.github.io/)
+1. 安装依赖
+
+```bash
+$ npm i taro-hooks --save
+```
+
+2. 使用
+
+```jsx | pure
+import { useEnv } from 'taro-hooks';
+```
+
+注: `taro-hooks`的`js`代码默认支持基于`ES modules`的`tree shaking`. 但你依然可以显式的使用[`babel-plugin-import`](https://github.com/ant-design/babel-plugin-import)去设置按需加载, 设置方式如下:
+
+```js | pure
+// babel.config.js
+module.exports = {
+  plugins: [
+    [
+      'import',
+      {
+        libraryName: 'taro-hooks',
+        camel2DashComponentName: false,
+      },
+      'taro-hooks',
+    ],
+  ],
+};
+```
+
+3. taro-init
+
+<embed src="../packages/hooks/README.md#L80-L86"></embed>
+
+## 使用案例
+
+<embed src="../packages/hooks/README.md#L19-L70"></embed>
+
+<embed src="../packages/hooks/README.md#L143-L290"></embed>
