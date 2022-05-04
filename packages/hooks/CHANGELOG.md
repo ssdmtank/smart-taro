@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.6](https://github.com/ssdmtank/smart-taro/compare/smart-taro-hooks@0.0.5...smart-taro-hooks@0.0.6) (2022-05-04)
+
+### Bug Fixes
+
+- fix comment ([e55d98b](https://github.com/ssdmtank/smart-taro/commit/e55d98b942d61af2f870d47f5ff994ba0aa46021))
+
 ## 0.0.5 (2022-05-04)
 
 ### Bug Fixes
