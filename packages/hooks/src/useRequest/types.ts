@@ -14,11 +14,18 @@ export interface Options<TData, TParams extends any[]> {
 
   defaultParams?: TParams;
 
-  // refreshDeps
+  // refreshDeps plugin
   refreshDeps?: DependencyList;
   refreshDepsAction?: () => void;
 
-  // ready
+  // loadingDelay plugin
+  loadingDelay?: number;
+
+  // retry plugin
+  retryCount?: number;
+  retryInterval?: number;
+
+  /** ready false 时，请求永远都不会发出 */
   ready?: boolean;
 }
 
@@ -71,3 +78,5 @@ export interface Result<TData, TParams extends any[]> {
   mutate: Fetch<TData, TParams>['mutate'];
   cancel: Fetch<TData, TParams>['cancel'];
 }
+
+export type Timeout = ReturnType<typeof setTimeout>;

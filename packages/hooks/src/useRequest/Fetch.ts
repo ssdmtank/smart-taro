@@ -27,7 +27,7 @@ export default class Fetch<TData, TParams extends any[]> {
     };
   }
 
-  private setState(s: Partial<FetchState<TData, TParams>> = {}) {
+  setState(s: Partial<FetchState<TData, TParams>> = {}) {
     this.state = { ...this.state, ...s };
     // 强制刷新
     this.subscribe();
